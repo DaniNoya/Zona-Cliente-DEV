@@ -1,0 +1,117 @@
+/* Fondo personalizado para la página de inicio de sesión */
+body {
+    background-image: url('/img/LoginBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Estilo para el logo o el título */
+.login-logo a {
+    font-size: 2rem; /* Puedes ajustar el tamaño del texto */
+    font-weight: bold; /* Aplica la negrita */
+    text-transform: uppercase; /* Si quieres que esté en mayúsculas */
+}
+
+
+/* Estilo para los campos de entrada con solo una línea inferior */
+.input-group .form-control {
+    border: none; /* Elimina el borde por completo */
+    border-bottom: 2px solid #ccc; /* Solo línea inferior */
+    padding: 10px;
+    font-size: 18px; /* Aumentamos el tamaño de la fuente */
+    font-weight: bold;
+    transition: border-bottom 0.3s ease;
+}
+
+.input-group .form-control:focus {
+    border-bottom: 2px solid #007bff; /* Cambiar color al hacer foco */
+    box-shadow: none;
+}
+
+/* Estilo para el contenedor de autenticación */
+.custom-auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para el formulario de login */
+.login-box {
+    width: 100%; /* Se asegura de ocupar todo el ancho del contenedor */
+    max-width: 500px; /* Limitamos el tamaño máximo */
+    padding: 40px;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los íconos dentro de los campos */
+.input-group-text {
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+/* Estilo para los labels */
+.icheck-primary label {
+    font-size: 14px;
+}
+
+/* Estilo para el botón */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem; /* Aumentar tamaño del texto */
+    font-weight: bold;
+    border-radius: 25px !important; /* Bordes redondeados */
+    background-color: rgba(0, 110, 255, 0.8) !important;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: 20px; /* Añadir espacio arriba del botón */
+}
+
+/* Efecto hover para el botón */
+.btn:hover {
+    transform: scale(1.05); /* Aumenta el valor para un efecto más pronunciado */
+    background-color: rgba(0, 110, 255, 1) !important; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilo para los campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
+}
+
+/* Hacer los elementos más grandes en base al contenedor custom-auth-container */
+.custom-auth-container .input-group .form-control,
+.custom-auth-container .btn {
+    font-size: 1.2rem; /* Aumenta el tamaño de fuente */
+    padding: 12px; /* Aumenta el padding */
+}
+
+/* Cuando el checkbox está marcado */
+.icheck-primary input[type="checkbox"]:checked + label {
+    color: #007bff; /* Cambiar color del texto cuando está marcado */
+}
+
+/* Estilo para los labels */
+.icheck-primary label {
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+}
+
+/* Efecto hover en los checkboxes */
+.icheck-primary input[type="checkbox"]:hover + label {
+    color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
